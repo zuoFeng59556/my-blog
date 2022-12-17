@@ -14,7 +14,16 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /pages/javascript/index
+      link: /pages/start/
+    - theme: alt
+      text: JavaScript
+      link: '/pages/JavaScript/variate/'
+    - theme: alt
+      text: HTML
+      link: ''
+    - theme: alt
+      text: CSS
+      link: ''
     # - theme: alt
     #   text: 个人简历
     #   link: https://raomaiping.host/%E9%A5%B6%E8%BF%88%E5%B9%B3-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88-3%E5%B9%B4.pdf

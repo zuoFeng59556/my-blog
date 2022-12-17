@@ -20,19 +20,31 @@ export default {
       lineNumbers: true
     },
     nav: [
-      { text: '联系我', link: '/guide' },
+      {
+        text: '联系我',
+        items: [
+          { text: '595563214@qq.com', link: '' },
+        ]
+      },
     ],
     sidebar: [
       {
-        text: 'Guide',
+        text: ' 开始',
         items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
+          { text: '起步', link: '/pages/start/' },
+        ]
+      },
+      {
+        text: ' JavaScript',
+        collapsible: true,
+        items: [
+          { text: 'var let const', link: '/pages/JavaScript/variate/' },
+          { text: '原型 原型链', link: '/pages/JavaScript/prototype/' },
         ]
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/zuoFeng59556' },
+      { icon: 'github', link: 'https://github.com/zuoFeng59556/my-blog' },
     ],
     // sidebar: {
     //   '/open-layers/': OpenLayers,

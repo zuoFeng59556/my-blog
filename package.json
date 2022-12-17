@@ -5,14 +5,12 @@
   "main": "index.js",
   "author": "王子俊 <595563214@qq.com>",
   "license": "MIT",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
-
   "dependencies": {
     "vitepress": "^1.0.0-alpha.32"
   }
