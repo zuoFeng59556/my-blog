@@ -164,7 +164,7 @@
     const son = new father();
     son.getName(); // 小明
 ```
-其实所有函数的原型都是Object的实例，所以原型链的尽头就是Object,Object的原型是null。  
+其实所有函数的原型都是`Object`的实例，所以原型链的尽头就是`Object`,`Object`的原型是`null`。  
 下面我们来感受一下原型链。
 ```js
     function grandfather() {}
