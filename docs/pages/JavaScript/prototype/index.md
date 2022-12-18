@@ -43,7 +43,7 @@
     console.log(student.prototype);// {constructor: ƒ student()}
     console.log(student.prototype.constructor === student); //true
 ```
-现在我们知道了，每个函数都有一个原型（原型对象），其中默认包括一个`constructor`属性，而这个属性指向关联的构造函数，可以理解为 谁的 原型对象 里面的`constructor`属性 指向它自己，小红的原型对象里面的`constructor`指向小红自己，小明的则指向小明自己。
+现在我们知道了，每个函数都有一个原型（原型对象），其中默认包括一个`constructor`属性，而这个属性指向关联的构造函数，可以理解为 函数的 原型对象 里面的`constructor`属性 指向它自己。
 
 ## 实例的原型
 除了构造函数之外，被构造函数`new`出来的实例也是有原型对象的，在chrome浏览器中可以通过`__proto__`属性来访问。（注意proto前面和后面是两个下划线）
@@ -114,4 +114,70 @@
 
     console.log(a.sayName === b.sayName); //true
 ```
-问题顺利解决，不管创建多个对象，`sayName`这个函数也只需要在内存中存储一次了。
+问题顺利解决，不管创建多个对象，`sayName`这个函数也只需要在内存中存储一次了。  
+这里我们简单理解一下“原型”的意思，原型 就是构造函数实例化对象的模型。
+
+如果我们想知道一个属性到底是属于原型，还是对象本身，我们可以这样做。
+```js
+    function student() {}
+    student.prototype.age = "18";
+    const a = new student();
+    a.name = " 小红";
+
+    console.log("name" in a); // true
+    console.log("age" in a); // true
+
+    console.log(a.hasOwnProperty("name")); // true
+    console.log(a.hasOwnProperty("age")); //false
+```
+`in`操作符判断属性时会包括原型的属性，也就是说在对象本身和原型上只要能找到就会返回`true`，而`hasOwnProperty()`只有在属性属于自身时才会返回`true`。
+
+## 原型链
+现在回顾一下上面所说的知识；   
+1.构造函数有一个原型，默认有一个属性`constructor`指向构造函数本身。   
+2.实例有一个属性`__proto__`指向构造函数的原型。   
+那如果一个构造函数的原型是一个实例呢？
+```js
+    function grandfather() {
+      this.name = "小明";
+    }
+    grandfather.prototype.getName = function () {
+      console.log(this.name);
+    };
+
+    function father() {}
+    father.prototype = new grandfather();
+    father.prototype.getName(); // 小明
+```
+现在父亲函数的原型是爷爷函数的实例，这代表通过父亲的原型对象可以访问到爷爷的`getName`方法。
+我们用父亲函数实例化一个对象，这样就简单的实现了继承。
+```js
+    function grandfather() {
+      this.name = "小明";
+    }
+    grandfather.prototype.getName = function () {
+      console.log(this.name);
+    };
+
+    function father() {}
+    father.prototype = new grandfather();
+    const son = new father();
+    son.getName(); // 小明
+```
+其实所有函数的原型都是Object的实例，所以原型链的尽头就是Object,Object的原型是null。  
+下面我们来感受一下原型链。
+```js
+    function grandfather() {}
+    function father() {}
+    father.prototype = new grandfather();
+    const son = new father();
+
+    console.log(son.__proto__ === father.prototype); // true
+    console.log(son.__proto__.__proto__ === grandfather.prototype); // true
+    console.log(son.__proto__.__proto__.__proto__ === Object.prototype); // true
+    console.log(son.__proto__.__proto__.__proto__.__proto__ === null); // true
+    
+```
+::: tip
+这里补充说明一下，访问一个对象的属性时会优先搜索对象本身，然后搜索他的原型，然后是他原型的原型，按着原型链一直搜索到`Object`的原型为止。
+:::
