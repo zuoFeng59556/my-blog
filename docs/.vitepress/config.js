@@ -54,4 +54,5 @@ export default {
     lastUpdatedText: '最近更新时间',
 
   },
+
 }
