@@ -1,5 +1,5 @@
 <script setup>
-import Map from './index.vue'
+// import Map from './index.vue'
 </script>
 # 图层控件
 
@@ -14,7 +14,7 @@ import Map from './index.vue'
   <div><div/>
 ```
 
-<<< @/pages/javascript/index.vue
+<!-- <<< @/pages/javascript/index.vue -->
 
 
 
