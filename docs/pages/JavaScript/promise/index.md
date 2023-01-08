@@ -186,3 +186,6 @@
       const res3 = await request(res2);
     }
 ```
+:::tip
+Promise构造函数是同步函数立即执行，then 和 finally 方法是 异步微任务。
+:::
