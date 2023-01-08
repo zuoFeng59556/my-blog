@@ -41,6 +41,7 @@ export default {
         items: [
           { text: 'var let const', link: '/pages/JavaScript/variate/' },
           { text: '原型 原型链', link: '/pages/JavaScript/prototype/' },
+          { text: '闭包', link: '/pages/JavaScript/closure/' },
         ]
       }
     ],
