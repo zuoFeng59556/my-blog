@@ -40,10 +40,10 @@ export default {
         collapsible: true,
         items: [
           { text: 'var let const', link: '/pages/JavaScript/variate/' },
+          { text: '函数', link: '/pages/JavaScript/function/' },
           { text: '原型 原型链', link: '/pages/JavaScript/prototype/' },
-          { text: '闭包', link: '/pages/JavaScript/closure/' },
-          { text: '事件循环 异步', link: '/pages/JavaScript/eventloop/' },
           { text: 'Promise async  await', link: '/pages/JavaScript/promise/' },
+          { text: '事件循环 异步', link: '/pages/JavaScript/eventloop/' },
         ]
       }
     ],
