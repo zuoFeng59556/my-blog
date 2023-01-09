@@ -7,7 +7,7 @@ titleTemplate: 我的技能树
 hero:
   name: Hi there 👋
   text: ' '
-  tagline: Welcome to my blog
+  tagline: Welcome to my blog 我正在努力更新。
   image:
     src: /image/avatar.jpg
     alt: OpenLayers
