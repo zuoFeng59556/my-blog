@@ -42,6 +42,7 @@ export default {
           { text: 'var let const', link: '/pages/JavaScript/variate/' },
           { text: '函数', link: '/pages/JavaScript/function/' },
           { text: '对象', link: '/pages/JavaScript/object/' },
+          { text: '数组', link: '/pages/JavaScript/array/' },
           { text: '防抖 节流', link: '/pages/JavaScript/function/fj.md' },
           { text: '原型 原型链', link: '/pages/JavaScript/prototype/' },
           { text: 'Promise async  await', link: '/pages/JavaScript/promise/' },
