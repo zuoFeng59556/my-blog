@@ -6,9 +6,7 @@
 const res = 123;
 console.log(123);
 
-setInterval(() => {
-  console.log('老了');
-}, 1000);
+
 </script>
 
 <style scoped>
