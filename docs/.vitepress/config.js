@@ -47,6 +47,7 @@ export default {
           { text: '原型 原型链', link: '/pages/JavaScript/prototype/' },
           { text: 'Promise async  await', link: '/pages/JavaScript/promise/' },
           { text: '事件循环 异步', link: '/pages/JavaScript/eventloop/' },
+          { text: '浅拷贝 深拷贝', link: '/pages/JavaScript/copy/' },
         ]
       }
     ],
