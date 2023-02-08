@@ -1,15 +1,15 @@
-# 三分钟学会laf
-## laf是什么
+# 三分钟学会 laf
+## laf 是什么
 - laf 是云开发平台，可以快速的开发应用
 - laf 是一个开源的 BaaS 开发平台（Backend as a Service)
 - laf 是一个开箱即用的 serverless 开发平台
 - laf 是一个集「函数计算」、「数据库」、「对象存储」等于一身的一站式开发平台
 - laf 可以是开源版的腾讯云开发、开源版的 Google Firebase    
-- **一句话总结，可以让前端秒变全栈。点击[这里](https://github.com/labring/laf)去Github查看。**
+- **一句话总结，可以让前端秒变全栈。点击[这里](https://github.com/labring/laf)去 Github 查看。**
 
 ## 起步
-话不多说开始正题，做一个ToDoList。  
-第一步 去http://www.preview.laf.run/ 注册一个账号   
+话不多说开始正题，做一个 ToDoList。  
+第一步 去 http://www.preview.laf.run/ 注册一个账号   
 第二步 像我这样创建一个应用   
 ![alt 属性文本](./image/1.png)   
 第三步 点击开发按钮进入开发页面   
@@ -31,11 +31,11 @@ export async function main(ctx: FunctionContext) {
 然后点击右上角`发布`按钮。
 ![alt 属性文本](./image/4.png)   
 完成这些步骤后，我们在前端项目中调用一下试试看。  
-在前端项目安装laf。
+在前端项目安装 laf。
 ```
   npm install laf-client-sdk
 ```
-vue页面中使用
+vue 页面中使用
 ```js
 import { Cloud } from "laf-client-sdk"; // 引入laf
 
@@ -166,8 +166,8 @@ async function remove() {
 更多操作请查看官方文档
 :::
 
-## ToDoList成品
-然后把刚刚的这些技能组合起来，稍微加亿点细节就是一个ToDoList啦。
+## ToDoList 成品
+然后把刚刚的这些技能组合起来，稍微加亿点细节就是一个 ToDoList 啦。
 
 ```vue
 <script setup>
