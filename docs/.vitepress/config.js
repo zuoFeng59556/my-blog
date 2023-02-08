@@ -51,10 +51,13 @@ export default {
         ]
       },
       {
-        text: ' Demo',
+        text: ' 三分钟学会系列',
         collapsible: true,
         items: [
-          { text: '三分钟学会laf', link: '/pages/Demo/laf/' },
+          // { text: '三分钟学会laf', link: '/pages/quickStart/preface/' },
+          { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
+          { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
+
         ]
       }
     ],
