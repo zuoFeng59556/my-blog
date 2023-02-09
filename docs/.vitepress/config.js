@@ -56,6 +56,7 @@ export default {
         items: [
           { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
+          { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
           { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
           { text: '三分钟学会 react', link: '/pages/quickStart/react/' },
 
