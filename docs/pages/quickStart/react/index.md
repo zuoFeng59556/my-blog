@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<h1>你好,react</h1>); 
 ```
 在项目目录下执行 `npm run start`。   
-访问 http://localhost:3000 ，就可以看到我们的内容啦。
+访问 localhost:3000 ，就可以看到我们的内容啦。
 ![alt 属性文本](./image/3.png)  
 
 
