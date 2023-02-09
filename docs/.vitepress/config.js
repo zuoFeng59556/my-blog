@@ -1,5 +1,5 @@
 export default {
-  title: 'VitePress',
+  title: '左风的博客',
   description: 'Just playing around.',
   base: '/my-blog/',
   head: [
