@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.ad4fc1c1.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/quickStart/preface/index.md"}'),r={name:"pages/quickStart/preface/index.md"};function c(n,s,o,p,i,d){return t(),a("div")}const m=e(r,[["render",c]]);export{f as __pageData,m as default};
