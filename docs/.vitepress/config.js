@@ -54,7 +54,7 @@ export default {
         text: ' 三分钟学会系列',
         collapsible: true,
         items: [
-          // { text: '三分钟学会laf', link: '/pages/quickStart/preface/' },
+          { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
           { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
           { text: '三分钟学会 react', link: '/pages/quickStart/react/' },

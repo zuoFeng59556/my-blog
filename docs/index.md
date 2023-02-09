@@ -32,7 +32,7 @@ hero:
 features:
   - icon: 😎
     title: 目前更新
-    details: JavaScript
+    details: JavaScript , 三分钟学会系列
   - icon: 👀
     title: 计划更新
     details: Vue全家桶 、Vue源码 、http 、node.js ...
