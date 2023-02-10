@@ -59,6 +59,7 @@ export default {
           { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
           { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
           { text: '三分钟学会 react', link: '/pages/quickStart/react/' },
+          { text: '三分钟学会 Next.js', link: '/pages/quickStart/next/' },
 
         ]
       }
