@@ -52,4 +52,23 @@ multipass info laf-dev | Where-Object{$_ -match "IPv4"} | ForEach-Object{ ($_ -s
 multipass exec laf-dev -- sudo -u root sh /laf/deploy/scripts/install-on-linux.sh 放在这里.nip.io
 ```
 ![alt 属性文本](./image/7.png)  
-网速太慢，待续。。。
+网速太慢，待续。。。   
+*** *** 
+如果你也和我一样下载特别慢，可以将以下代码添加到 `install-on-linux.sh` 文件中。
+```
+mkdir /etc/containers/
+cat >/etc/containers/registries.conf <<EOF
+unqualified-search-registries = ["docker.io"]
+
+[[registry]]
+prefix = "docker.io"
+location = "dockerproxy.com"
+```
+![alt 属性文本](./image/8.png)  
+保存后重新运行
+```
+// 别忘了更换ip地址
+multipass exec laf-dev -- sudo -u root sh /laf/deploy/scripts/install-on-linux.sh 放在这里.nip.io
+```
+直到你看到这个界面，就部署成功啦
+![alt 属性文本](./image/9.png)  
