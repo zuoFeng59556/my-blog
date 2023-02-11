@@ -158,7 +158,7 @@ function App() {
   return (
     <>
       <div className="mx-4 my-4">
-        <img className="rounded  mx-auto w-2/5 shadow-lg"  src="../public/jay.png" alt="" />
+        <img className="rounded  mx-auto w-2/5 shadow-lg"  src="/jay.png" alt="" />
         <div className="my-8 border rounded md:flex md:flex-wrap shadow-lg overflow-hidden">
           
           <div className="p-6 border-b md:w-1/2 md:border-r lg:w-1/4 lg:border-r-0 hover:bg-gray-800 group">
