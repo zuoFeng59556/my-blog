@@ -81,7 +81,7 @@ export default App
 - p 就是 padding
 - bg 就是 background
 - mr 就是 margin-right
-- blue.100 就是绿色  blue.300 就是更绿
+- blue.100 就是蓝色  blue.300 就是更蓝
 
 怎么样，是不是灰常的方便。但是这并不算啥，我们来点更厉害的。   
 `App.jsx`
