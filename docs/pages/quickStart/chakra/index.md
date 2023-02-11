@@ -130,6 +130,7 @@ export default App
 根据我们刚刚学的技能，稍微组合一下再加亿点点细节。   
 `App.jsx`
 ```js
+// 这里引入 chakra-ui 提供的 Heading,Input,Button 组件
 import { Flex,Heading,Input,Button, useColorMode,useColorModeValue } from "@chakra-ui/react"
 function App() {
   const { toggleColorMode } = useColorMode() 
