@@ -1,10 +1,10 @@
 # 三分钟学会 react,实现一个 ToDoList。
 ## 起步
-运行命令创建一个 react 项目。
+运行命令创建一个 `react` 项目。
 ```
 npx create-react-app todo-list
 ```
-等待创建完毕后用 vscode 打开此项目。
+等待创建完毕后用 `vscode` 打开此项目。
 - 删除 src 下面多余文件，只保留 `index.js` 和 `index.css`
 - 清空 `index.js` 和 `index.css`   
 ![alt 属性文本](./image/1.png)  

@@ -180,7 +180,7 @@ function App() {
 
 export default App;
 ```
-回到浏览器点击 设置值为888 按钮
+回到浏览器点击 `设置值为888` 按钮
 ![alt 属性文本](./image/4.5.png)   
 
 

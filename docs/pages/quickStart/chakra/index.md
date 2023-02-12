@@ -1,12 +1,12 @@
 # 三分钟学会 Chakra-UI 写一个厉害的登录页
 ## 起步
-老规矩创建一个项目用 vscode 打开
+老规矩创建一个项目用 `vscode` 打开
 ```
 npm create vite chakra-demo --template react
 cd chakra-demo
 code .
 ```
-打开后删除 src 下的其他文件夹，只保留 App.jsx 和 main.jsx 
+打开后删除 `src` 下的其他文件夹，只保留 `App.jsx` 和 `main.jsx` 
 ![alt 属性文本](./image/1.png)   
 写入以下代码   
 `App.jsx`
@@ -30,14 +30,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 ```
-准备好这些以后 安装 chakra 并且安装一下依赖 把程序 run 起来
+准备好这些以后 安装 `chakra` 并且安装一下依赖 把程序 `run` 起来
 ```
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm i
 npm run dev
 ```
 ![alt 属性文本](./image/2.png)   
-然后打开我们的  main.jsx 写入以下代码
+然后打开我们的  `main.jsx` 写入以下代码
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -55,10 +55,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 ```
 这个时候返回浏览器就会发现 
 ![alt 属性文本](./image/3.png)   
-哎？俺的 h1 怎么变的这么小只了，不用慌这说明 chakra 已经起作用了。
+哎？俺的 `h1` 怎么变的这么小只了，不用慌这说明 `chakra` 已经起作用了。
 
 ## 组件和样式
-打开App.jsx 写入以下代码
+打开 `App.jsx` 写入以下代码
 ```js
 import { Box, Flex } from "@chakra-ui/react"
 
@@ -74,14 +74,14 @@ export default App
 ```
 打开浏览器
 ![alt 属性文本](./image/4.png)   
-发生了什么？ 我们 F12 审查元素发现， 原来 Flex 就是设置了 flex 的 div Box 就是普通的div
+发生了什么？ 我们 `F12` 审查元素发现， 原来 `Flex` 就是设置了 `flex` 的 `div` `Box` 就是普通的 `div`
 ![alt 属性文本](./image/5.png)   
-那 w p bg mr 都是些啥呢？其实通过效果图不难发现
-- w 就是 width
-- p 就是 padding
-- bg 就是 background
-- mr 就是 margin-right
-- blue.100 就是蓝色  blue.300 就是更蓝
+那 `w` `p` `bg` `mr` 都是些啥呢？其实通过效果图不难发现
+- `w` 就是 `width`
+- `p` 就是 `padding`
+- `bg` 就是 `background`
+- `mr` 就是 `margin-right`
+- `blue.100` 就是蓝色  `blue.300` 就是更蓝
 
 怎么样，是不是灰常的方便。但是这并不算啥，我们来点更厉害的。   
 `App.jsx`
@@ -152,7 +152,7 @@ export default App
 ```
 打开浏览器
 ![alt 属性文本](./image/8.png)   
-点击 Toggle Color Mode 按钮
+点击 `Toggle Color Mode` 按钮
 ![alt 属性文本](./image/9.png)   
 缩小一下页面
 ![alt 属性文本](./image/10.png)   

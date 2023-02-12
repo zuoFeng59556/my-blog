@@ -6,9 +6,9 @@ npm create vite reactRouter-demo --template react
 cd .\reactRouter-demo\
 npm install react-router-dom
 ```
-用 vscode 打开并清空 `src` 文件夹 只保留 `APP.jsx` 和 `main.jsx`   
+用 `vscode` 打开并清空 `src` 文件夹 只保留 `APP.jsx` 和 `main.jsx`   
 ![alt 属性文本](./image/1.png)  
-在 App.jsx 中写入以下代码
+在 `App.jsx` 中写入以下代码
 ```js
 function App() {
   return (
@@ -28,8 +28,8 @@ npm run dev
 ![alt 属性文本](./image/2.png)  
 
 ## 配置路由
-src 文件下创建 pages 文件夹   
-然后在 pages 文件下创建 home.jsx 和  login.jsx 
+`src` 文件下创建 `pages` 文件夹   
+然后在 `pages` 文件下创建 `home.jsx` 和  `login.jsx` 
 ![alt 属性文本](./image/3.png)  
 并写入以下代码   
 `home.jsx`
@@ -51,7 +51,7 @@ function Login() {
 export default Login
 ```
 
-src下再创建一个 router 文件夹 并创建 index.jsx 文件
+`src` 下再创建一个 `router` 文件夹 并创建 `index.jsx` 文件
 ![alt 属性文本](./image/4.png)  
 写入以下代码   
 `index.jsx`
@@ -72,7 +72,7 @@ const routes = [
 export default routes
 ```
 
-做完这些之后，我们修改一下 App.jsx 中的内容
+做完这些之后，我们修改一下 `App.jsx` 中的内容
 ```js
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import routes from "./router"; 
@@ -100,13 +100,13 @@ export default App
 ![alt 属性文本](./image/6.png)  
 
 这样我们就完成了路由的基础配置，如果我们想添加新的页面，只需以下操作
-- pages 文件夹下创建 对应的文件 写完代码后默认导出
-- 在 router/index.jsx 中引入
-- 在 router/index.jsx 的 routes 新增一个对象 path 路径名 element 引入的组件
-- 在项目运行地址后 加上刚刚设置的 path 即可访问
+- `pages` 文件夹下创建 对应的文件 写完代码后默认导出
+- 在 `router/index.jsx` 中引入
+- 在 `router/index.jsx` 的 `routes` 新增一个对象 `path` 路径名 `element` 引入的组件
+- 在项目运行地址后 加上刚刚设置的 `path` 即可访问
 
 ## 跳转
-路由跳转我们需要用到 `useNavigate` , 我们在 home.jsx 中写入以下代码，点击按钮即可跳转到 login 页面。   
+路由跳转我们需要用到 `useNavigate` , 我们在 `home.jsx` 中写入以下代码，点击按钮即可跳转到 `login` 页面。   
 `home.jsx`
 ```js
 import { useNavigate } from 'react-router-dom' // 引入
@@ -131,7 +131,7 @@ function Home() {
 export default Home
 ```
 ## 传参
-如果一个页面需要接收参数，那么我们需要在 path 上预留一个参数占位，例如我们在 login 页面接收一个 id 。   
+如果一个页面需要接收参数，那么我们需要在 path 上预留一个参数占位，例如我们在 `login` 页面接收一个 `id`。   
 `router/index.jsx`
 ```js
 import Login from "../pages/login" 
@@ -150,12 +150,12 @@ const routes = [
 ]
 export default routes
 ```
-我们在跳转的时候需要把id带上
+我们在跳转的时候需要把 `id` 带上
 ```js
 // 同样在 path 后面加上需要传递的参数 这里的10086就是我们传的id
 navigate('/login/10086')
 ```
-我们在login页面接收一下参数   
+我们在 `login` 页面接收一下参数   
 `login.jsx`
 ```js
 import { useParams } from 'react-router-dom' // 引入
@@ -172,7 +172,7 @@ export default Login
 ![alt 属性文本](./image/7.png)  
 
 ## 嵌套路由
-在pages下新建一个文件 logout.jsx 
+在 `pages` 下新建一个文件 `logout.jsx `
 ![alt 属性文本](./image/8.png)  
 写入以下代码   
 `logout.jsx `
@@ -256,14 +256,14 @@ export default Login
 **点击右侧 show logout 按钮**
 ![alt 属性文本](./image/11.png)  
 
-我们发现 home 页面中使用了 login  logout 两个页面，可以通过路由跳转切换，这就是嵌套路由。   
+我们发现 `home` 页面中使用了 `login`  `logout` 两个页面，可以通过路由跳转切换，这就是嵌套路由。   
 使用嵌套路由需要
 - 在一级路由中添加属性 `children` 并把二级路由配置进入
 - 页面引入 `Outlet` 作为出口
 - 跳转即可
 
 ## 404路由
-在 pages 里新建一个文件 NotFound.jsx 并写上以下代码   
+在 `pages` 里新建一个文件 `NotFound.jsx` 并写上以下代码   
 `NotFound.jsx`
 ```js
 function NotFound() {
@@ -271,7 +271,7 @@ function NotFound() {
 }
 export default NotFound
 ```
-在 router/index.jsx 中引入并添加到 routes   
+在 `router/index.jsx` 中引入并添加到 `routes`   
 `router/index.jsx`
 ```js
 import Login from "../pages/login" 

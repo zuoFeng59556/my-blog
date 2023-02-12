@@ -1,12 +1,12 @@
 # 三分钟学会 tailwind 和 Css 说拜拜
 ## 起步
-老规矩创建一个项目用 vscode 打开
+老规矩创建一个项目用 `vscode` 打开
 ```
 npm create vite tailwind-demo --template react
 cd tailwind-demo
 code .
 ```
-打开后删除 src 下的其他文件夹，只保留 App.jsx App.css 和 main.jsx 
+打开后删除 `src` 下的其他文件夹，只保留 `App.jsx` `App.css` 和 `main.jsx`
 ![alt 属性文本](./image/1.png)   
 
 写入以下代码   
@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 ``` 
-App.css 暂时为空   
+`App.css` 暂时为空   
 依次执行以下命令
 ```
 // 安装项目依赖
@@ -50,8 +50,8 @@ npx tailwindcss init -p
 ```
 执行完之后我们会发现项目里生成了两个文件
 ![alt 属性文本](./image/2.png)   
-我们打开 tailwind.config.cjs 写入以下代码   
-`tailwind.config.cjs`
+我们打开 `tailwind.config.cjs` 写入以下代码   
+
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -65,8 +65,8 @@ module.exports = {
   plugins: [],
 }
 ```
-然后在 App.css 中写入以下代码   
-`App.css`
+然后在 `App.css` 中写入以下代码   
+
 ```css
 @tailwind base;
 @tailwind components;
@@ -75,11 +75,11 @@ module.exports = {
 `npm run dev` 启动项目 打开浏览器会发现
 ![alt 属性文本](./image/3.png)   
 
-耶？ h1 变得这么小只，不要慌 这说明 tailwind 起作用了
+耶？ `h1` 变得这么小只，不要慌 这说明 `tailwind` 起作用了
 
 ## 初体验
-接下来我们改动一下 App.jsx 中的代码   
-`App.jsx`
+接下来我们改动一下 `App.jsx` 中的代码   
+
 ```js
 import "./App.css";
 
@@ -100,11 +100,11 @@ export default App
 ![alt 属性文本](./image/5.png)   
 发生了什么？
 - 我们只需要写类名就可以实现对应的样式 (对我这种时常不知道起什么类名的特别友好)
-- h 就是 height , w 就是 width 单位 1 就是 0.25rem 
-- mb 就是margin-bottom
-- bg 就是 background 
-- blue-200 就是 蓝色 blue-500 就是更蓝
-- hover: 就是在鼠标放在上面时显示的样式 
+- `h` 就是 `height` , `w` 就是 `width` 单位 1 就是 `0.25rem`
+- `mb` 就是 `margin-bottom`
+- `bg` 就是 `background` 
+- `blue-200` 就是 蓝色 `blue-500` 就是更蓝
+- `hover:` 就是在鼠标放在上面时显示的样式 
 
 我们继续添加一些代码   
 `App.jsx`
@@ -122,18 +122,18 @@ function App() {
 }
 export default App
 ```
-这里我们在第一个 div 里面添加了 `md:bg-red-200` `lg:bg-red-500`  
-现在我们打开浏览器，按 F12 把控制台像我这样设置在右侧
+这里我们在第一个 `div` 里面添加了 `md:bg-red-200` `lg:bg-red-500`  
+现在我们打开浏览器，按 `F12` 把控制台像我这样设置在右侧
 ![alt 属性文本](./image/6.png)   
-然后我们缩小页面宽度，当页面宽度缩小为 1022px 附近的时候，我们发现第一个 div 的背景色变成了淡一些的红色
+然后我们缩小页面宽度，当页面宽度缩小为 `1022px` 附近的时候，我们发现第一个 `div` 的背景色变成了淡一些的红色
 ![alt 属性文本](./image/7.png) 
-我们继续缩小到 767px 附近 背景色又变成了蓝色
+我们继续缩小到 `767px` 附近 背景色又变成了蓝色
 ![alt 属性文本](./image/8.png) 
 
 说到这里，应该也猜出是怎么回事了
-- tailwind 是移动端优先，所以没有指定前缀的类名默认是在小屏时使用
-- md: 前缀后的类名是屏幕在中等宽度的时候使用
-- lg: 前缀后的类名是在屏幕较大的时候使用
+- `tailwind` 是移动端优先，所以没有指定前缀的类名默认是在小屏时使用
+- `md:` 前缀后的类名是屏幕在中等宽度的时候使用
+- `lg:` 前缀后的类名是在屏幕较大的时候使用
 
 ## 来点厉害的
 **先看一下效果图**    
@@ -146,7 +146,7 @@ export default App
 `大屏`
 ![alt 属性文本](./image/11.png) 
 
-下面代码稍微有点复杂，这里先说一下思路，做响应式的时候应该先写最小屏幕的样式，也就是不带前缀的，然后写中等屏幕的md：前缀的，最后写大屏lg：前缀的，是写完一个屏幕拉大之后调试着写，而不是一把梭。   
+下面代码稍微有点复杂，这里先说一下思路，做响应式的时候先写最小屏幕的样式，也就是不带前缀的，然后写中等屏幕的`md：`前缀的，最后写大屏`lg：`前缀的，是写完一个屏幕拉大之后调试着写，而不是一把梭。   
 这个例子是参考这个视频来做的，如果你感觉不理解，点击[这里](https://www.bilibili.com/video/BV1vU4y1h7M1/?spm_id_from=333.337.search-card.all.click&vd_source=903c2b09b7412037c2eddc6a8fb9828b)查看原视频。   
 最后，[官方文档](https://tailwindcss.com/)写的非常清晰，可以一边查阅文档一边写。   
 **完整代码**   
