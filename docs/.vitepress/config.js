@@ -63,6 +63,7 @@ export default {
           { text: '三分钟学会 React Router ', link: '/pages/quickStart/reactRouter/' },
           { text: '三分钟学会 Chakra-UI ', link: '/pages/quickStart/chakra/' },
           { text: '三分钟学会 tailwind Css ', link: '/pages/quickStart/tailwind/' },
+          { text: '三分钟学会 zustand + immer', link: '/pages/quickStart/zustand/' },
         ]
       }
     ],
