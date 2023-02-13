@@ -31,24 +31,20 @@ Fork 完之后我们到自己的仓库列表，找到刚刚复制的仓库，并
 
 
 ## 改代码
-改别人代码之前我们还需要做一件事情，那就是从 `upstream` 仓库拉一下最新代码到 `local`，万一别人这会更改了代码呢。   
-依次执行以下命令。
+改别人代码之前我们还需要做一件事情，那就是基于 `upstream` 仓库创建一个新的分支。   
+为什么这里需要创建新的`分支`呢，为一个`分支`在同一时间只能提交一个 `pr` 所以一般建议新建一个分支来提交 `pr`。
 ```
-// 获取到 upstream 仓库
-git fetch upstream 
+// 获取到 upstream 仓库的 main 分支
+git fetch upstream main
 
-// 切换到主分支
-git checkout main 
+// 切换到 upstream 仓库的 main 分支
+git checkout upstream/main
 
-// 将上游仓库的main分支合并到当前所在分支也就是本地的main分支
-git rebase upstream/main 
+// 基于 upstream 仓库的 main 分支新建一个 feat-1 分支并切换
+git switch -c feat-1
 ```
-本身到这一步我们已经可以开始修改代码了，但是一个分支在同一时间只能提交一个 pr 如果你有两个 pr 需要提交呢，所以一般建议创建一个分支来修改代码。
-```
-// 创建一个 feat-1 分支并切换到 feat-1 
-git checkout -b feat-1 
-```
-好了终于可以修改代码了，我们打开项目里仅有的 `readme`  文件，发现这里至少有两处错误，该大写的没大写，也不懂的使用三单。
+好了终于可以修改代码了   
+我们打开项目里仅有的 `readme`  文件，发现这里至少有两处错误，该大写的没大写，也不懂的使用三单。
 ![alt 属性文本](./image/5.png)   
 经过我们一番修改后，看起来没有什么问题了。
 ![alt 属性文本](./image/6.png)   
@@ -58,8 +54,8 @@ git checkout -b feat-1
 ```
 git add .
 git commit -m 'fix:修复了一些语法错误'
-// 这里要指明提交 仓库和分支
-git push -u origin feat-1
+// 这里要指明提交的仓库和分支
+git push origin feat-1
 ```
 提交成功后，打开 GitHub 我们 Fork 的仓库发现已经有提示了，我们点击右侧绿色按钮。
 ![alt 属性文本](./image/7.png)   
