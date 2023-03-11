@@ -57,7 +57,7 @@ export default {
           { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
           { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
-          { text: '三分钟拥有自己的 chat-gpt (开发到上线)', link: '/pages/quickStart/chatGPT/' },
+          { text: '三分钟拥有自己的 chatGPT (开发到上线)', link: '/pages/quickStart/chatGPT/' },
           { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
           { text: '三分钟学会 React', link: '/pages/quickStart/react/' },
           { text: '三分钟学会 Next.js', link: '/pages/quickStart/next/' },
