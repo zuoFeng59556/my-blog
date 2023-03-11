@@ -1,6 +1,21 @@
 # 三分钟拥有自己的 chat-gpt (开发到上线)
-- 首先你需要有一个 `laf` 账号，如果你还不知道 `laf` 是什么，点击[这里](https://zuofeng59556.github.io/my-blog/pages/quickStart/laf/)三分钟学会
+OpenAI 已经公布了 ChatGPT 正式版 API，背后的新模型是 gpt-3.5-turbo，这是 OpenAI 目前最先进的模型，响应速度更快，价格更便宜。
+
+作为开发人员，我们还是希望通过 API 将 ChatGPT 和相关模型集成到自己的产品和应用中，尴尬的是，目前无法访问 ChatGPT API，原因大家都懂得。于是网上出现了各种各样的 API 反代服务，我们可以直接通过反代服务来变相访问 ChatGPT API。
+
+即使我们解决了 API 的访问问题，还要准备一个开发环境，比如对于 Node.js 客户端来说，需要准备一个 Node.js 环境。
+
+有没有一种简单快捷的方法来调用 ChatGPT API 呢？
+
+#### 那当然是用 Laf 了。
+
+Laf 是一个完全开源的一站式云开发平台，提供了开箱即用的云函数，云数据库，对象存储等能力，让你可以像写博客一样写代码。
+
+
+- 首先你需要有一个 `laf` 账号，如果你还不知道 `laf` 是什么，参考 [三分钟学会Laf](https://zuofeng59556.github.io/my-blog/pages/quickStart/laf/)
 - 然后你还需要有一个 `chat-gpt` 的账号并且生成一个 `apiKey` (这一步可以问 `Google` )
+  
+言归正传，<font color=#42b883>下面我们开始计时</font>，三分钟时间用 Laf 实现一个自己的 ChatGPT！
   
 ## 云函数
 具备了上面这两个条件我们就可以开始啦。   
@@ -88,7 +103,7 @@ parentMessageId.value = res.id;
 ![alt 属性文本](./image/6.png)   
 点完之后出来一个链接，我们点击一下访问看看是啥东西。
 ![alt 属性文本](./image/7.png)   
-#### 哦！我的老天鹅呀 这不就是我刚刚开发的项目吗？
+#### 哦！我的老天鹅呀 这不就是我刚刚开发的项目吗？？？
 ![alt 属性文本](./image/8.png)   
 恭喜 到这里你的项目已经上线了，快分享给你的好朋友吧！    
 点击[这里](https://jyf6wk-chat-gpt.site.laf.dev/)查看我的 chatGPT    
