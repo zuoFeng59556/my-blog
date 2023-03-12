@@ -178,7 +178,8 @@ parentMessageId.value = res.id;
 
 我们只要稍微加**亿点点**细节，就可以变成这样：
 
-![](https://jsdelivr.icloudnative.io/gh/yangchuansheng/imghosting5@main/uPic/2023-03-11-19-05-paWg8q.png)
+![alt 属性文本](./image/3.png)   
+
 
 加完这点细节之后，基本开发工作就完成了，接下来就是把项目上线分享给你的朋友，顺便装个杯。
 
