@@ -85,3 +85,6 @@ export default App
 如果你按住 `alt` ( mac 按 option ) 加右边右键点击，会弹出组件的包含关系，点击组件名字也可以打开对应的文件。
 ![alt 属性文本](./image/9.png)  
 **这也太酷了吧！！！！！！**
+---
+> 如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛    
+> **https://github.com/zuoFeng59556/my-blog**

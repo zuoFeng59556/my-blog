@@ -80,3 +80,6 @@ git push origin feat-1
 :::tip
 同一个仓库第二次提 pr 从更新代码到 local 开始就可以啦
 :::
+---
+> 如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛    
+> **https://github.com/zuoFeng59556/my-blog**

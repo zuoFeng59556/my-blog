@@ -230,3 +230,6 @@ export default useStore;
 ![alt 属性文本](./image/7.png)   
 
 ok 至此我们已经学会了如何使用 `zustand`
+---
+> 如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛    
+> **https://github.com/zuoFeng59556/my-blog**
