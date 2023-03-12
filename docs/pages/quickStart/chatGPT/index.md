@@ -213,8 +213,11 @@ parentMessageId.value = res.id;
 
 恭喜，到这里你的项目已经上线了，快分享给你的好朋友吧！
 
----
 
+
+---
+> 如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛    
+> **https://github.com/zuoFeng59556/my-blog**
 + 项目源码：**https://github.com/zuoFeng59556/chatGPT**
 + 示例网站：**https://jyf6wk-chat-gpt.site.laf.dev/**
 
