@@ -9,7 +9,7 @@
 
 ## 起步
 话不多说开始正题，做一个 ToDoList。  
-第一步 去 http://www.preview.laf.run/ 注册一个账号   
+第一步 去 https://laf.dev/ 注册一个账号   
 第二步 像我这样创建一个应用   
 ![alt 属性文本](./image/1.png)   
 第三步 点击开发按钮进入开发页面   
@@ -41,7 +41,7 @@ import { Cloud } from "laf-client-sdk"; // 引入laf
 
 // 创建cloud对象
 const cloud = new Cloud({
-  baseUrl: "http://pcsw70.preview.laf.run", // 这里的pcsw70需要换成自己的APPID
+  baseUrl: "http://pcsw70.laf.dev", // 这里的pcsw70需要换成自己的APPID
   getAccessToken: () => '', // 这里暂时用不到先为空
 });
  
@@ -89,7 +89,7 @@ import { Cloud } from "laf-client-sdk"; // 引入laf
 
 // 创建cloud对象
 const cloud = new Cloud({
-  baseUrl: "http://pcsw70.preview.laf.run", // 这里的pcsw70需要换成自己的APPID
+  baseUrl: "http://pcsw70.laf.dev", // 这里的pcsw70需要换成自己的APPID
   getAccessToken: () => '', // 这里暂时用不到先为空
 });
  
@@ -118,7 +118,7 @@ export async function main(ctx: FunctionContext) {
 import { Cloud } from "laf-client-sdk";
 
 const cloud = new Cloud({
-  baseUrl: "http://pcsw70.preview.laf.run",
+  baseUrl: "http://pcsw70.laf.dev",
   getAccessToken: () => '',
 });
 
@@ -151,7 +151,7 @@ export async function main(ctx: FunctionContext) {
 import { Cloud } from "laf-client-sdk";
 
 const cloud = new Cloud({
-  baseUrl: "http://pcsw70.preview.laf.run",
+  baseUrl: "http://pcsw70.laf.dev",
   getAccessToken: () => '',
 });
 
@@ -175,7 +175,7 @@ import { Cloud } from "laf-client-sdk";
 import { ref } from "vue";
 
 const cloud = new Cloud({
-  baseUrl: "http://pcsw70.preview.laf.run",
+  baseUrl: "http://pcsw70.laf.dev",
   getAccessToken: () => '',
 });
 
