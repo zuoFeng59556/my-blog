@@ -276,4 +276,4 @@ import{_ as s,o as n,c as a,a as l}from"./app.daec06df.js";const p="/my-blog/ass
 <span class="line"><span style="color:#89DDFF;">.</span><span style="color:#FFCB6B;">name</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
 <span class="line"><span style="color:#A6ACCD;">  </span><span style="color:#B2CCD6;">width</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">100px</span><span style="color:#89DDFF;">;</span></span>
 <span class="line"><span style="color:#89DDFF;">}</span></span>
-<span class="line"></span></code></pre></div>`,49),c=[t];function r(F,D,y,A,C,i){return n(),a("div",null,c)}const u=s(e,[["render",r]]);export{g as __pageData,u as default};
+<span class="line"></span></code></pre></div><hr><blockquote><p>如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛<br><strong><a href="https://github.com/zuoFeng59556/my-blog" target="_blank" rel="noreferrer">https://github.com/zuoFeng59556/my-blog</a></strong></p></blockquote>`,51),c=[t];function r(F,D,y,A,C,i){return n(),a("div",null,c)}const u=s(e,[["render",r]]);export{g as __pageData,u as default};

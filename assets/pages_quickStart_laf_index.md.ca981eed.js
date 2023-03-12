@@ -149,4 +149,4 @@ import{_ as s,o as n,c as a,a as l}from"./app.daec06df.js";const p="/my-blog/ass
 <span class="line"><span style="color:#89DDFF;">}</span></span>
 <span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">style</span><span style="color:#89DDFF;">&gt;</span></span>
 <span class="line"></span>
-<span class="line"></span></code></pre></div>`,35),i=[A];function d(u,g,E,m,f,b){return n(),a("div",null,i)}const k=s(C,[["render",d]]);export{v as __pageData,k as default};
+<span class="line"></span></code></pre></div><hr><blockquote><p>如果本文对你有帮助，可以去 Github 给我的博客点个 star 嘛<br><strong><a href="https://github.com/zuoFeng59556/my-blog" target="_blank" rel="noreferrer">https://github.com/zuoFeng59556/my-blog</a></strong></p></blockquote>`,37),i=[A];function d(u,g,E,b,m,f){return n(),a("div",null,i)}const k=s(C,[["render",d]]);export{v as __pageData,k as default};
