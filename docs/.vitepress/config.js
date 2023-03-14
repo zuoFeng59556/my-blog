@@ -54,8 +54,12 @@ export default {
         text: ' 三分钟学会系列',
         collapsible: true,
         items: [
+
+          { text: '为什么是三分钟', link: '/pages/quickStart/offer/' },
+
           { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
+          { text: 'Laf 开发指南（比官方文档更详细）', link: '/pages/quickStart/LafGuide/' },
           { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
           { text: '三分钟拥有自己的 chatGPT (开发到上线)', link: '/pages/quickStart/chatGPT/' },
           { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
