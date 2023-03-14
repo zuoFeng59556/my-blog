@@ -55,7 +55,7 @@ export default {
         collapsible: true,
         items: [
 
-          { text: '我用 laf 三分钟写了一个 demo ，laf 老板：明天来上班！', link: '/pages/quickStart/offer/' },
+          { text: '我用 Laf 三分钟写了一个专属 ChatGPT ，Laf 创始人：明天来上班！', link: '/pages/quickStart/offer/' },
 
           { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
