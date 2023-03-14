@@ -55,7 +55,7 @@ export default {
         collapsible: true,
         items: [
 
-          { text: '为什么是三分钟', link: '/pages/quickStart/offer/' },
+          { text: '暂时没想好标题', link: '/pages/quickStart/offer/' },
 
           { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
           { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
