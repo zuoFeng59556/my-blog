@@ -89,7 +89,7 @@ import { Cloud } from "laf-client-sdk"; // 引入laf
 
 // 创建cloud对象
 const cloud = new Cloud({
-  baseUrl: "https://pcsw70.laf.dev", // 这里的pcsw70需要换成自己的APPID
+  baseUrl: "https://pcsw70.laf.dev", // 这里的pcsw70需要换成自己的APPID   
   getAccessToken: () => '', // 这里暂时用不到先为空
 });
  
