@@ -1,7 +1,6 @@
 export default {
   title: '左风的博客',
   description: 'Just playing around.',
-  base: '/my-blog/',
   head: [
     [
       'link',
@@ -33,6 +32,28 @@ export default {
         text: ' 开始',
         items: [
           { text: '起步', link: '/pages/start/' },
+          { text: '为什么是三分钟', link: '/pages/quickStart/preface/' }
+        ]
+      },
+      {
+        text: ' 三分钟学会系列',
+        collapsible: true,
+        items: [
+
+          { text: '我用 Laf 三分钟写了一个专属 ChatGPT ，Laf 创始人：明天来上班！', link: '/pages/quickStart/offer/' },
+
+          { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
+          { text: 'Laf 开发指南（比官方文档更详细）', link: '/pages/quickStart/LafGuide/' },
+          { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
+          { text: '三分钟拥有自己的 chatGPT (开发到上线)', link: '/pages/quickStart/chatGPT/' },
+          { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
+          { text: '三分钟学会 React', link: '/pages/quickStart/react/' },
+          { text: '三分钟学会 Next.js', link: '/pages/quickStart/next/' },
+          { text: '三分钟学会 React Router ', link: '/pages/quickStart/reactRouter/' },
+          { text: '三分钟学会 zustand + immer', link: '/pages/quickStart/zustand/' },
+          { text: '三分钟学会 Chakra-UI ', link: '/pages/quickStart/chakra/' },
+          { text: '三分钟学会 tailwind Css ', link: '/pages/quickStart/tailwind/' },
+          { text: '三分钟学会 ClickToComponent', link: '/pages/quickStart/clickToComponent/' },
         ]
       },
       {
@@ -50,28 +71,7 @@ export default {
           { text: '浅拷贝 深拷贝', link: '/pages/JavaScript/copy/' },
         ]
       },
-      {
-        text: ' 三分钟学会系列',
-        collapsible: true,
-        items: [
 
-          { text: '我用 Laf 三分钟写了一个专属 ChatGPT ，Laf 创始人：明天来上班！', link: '/pages/quickStart/offer/' },
-
-          { text: '为什么是三分钟', link: '/pages/quickStart/preface/' },
-          { text: '三分钟学会 laf', link: '/pages/quickStart/laf/' },
-          { text: 'Laf 开发指南（比官方文档更详细）', link: '/pages/quickStart/LafGuide/' },
-          { text: '三分钟部署 laf(win版本)', link: '/pages/quickStart/deployLaf/' },
-          { text: '三分钟拥有自己的 chatGPT (开发到上线)', link: '/pages/quickStart/chatGPT/' },
-          { text: '三分钟学会参与开源，提交 pr', link: '/pages/quickStart/pr/' },
-          { text: '三分钟学会 React', link: '/pages/quickStart/react/' },
-          { text: '三分钟学会 Next.js', link: '/pages/quickStart/next/' },
-          { text: '三分钟学会 React Router ', link: '/pages/quickStart/reactRouter/' },
-          { text: '三分钟学会 zustand + immer', link: '/pages/quickStart/zustand/' },
-          { text: '三分钟学会 Chakra-UI ', link: '/pages/quickStart/chakra/' },
-          { text: '三分钟学会 tailwind Css ', link: '/pages/quickStart/tailwind/' },
-          { text: '三分钟学会 ClickToComponent', link: '/pages/quickStart/clickToComponent/' },
-        ]
-      }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zuoFeng59556/my-blog' },

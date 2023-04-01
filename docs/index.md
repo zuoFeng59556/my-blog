@@ -2,12 +2,12 @@
 layout: home
 
 title: 左风
-titleTemplate: 我的技能树
+titleTemplate: 3 分钟实验室
 
 hero:
   name: Hi there 👋
   text: ' '
-  tagline: Welcome to my blog 我正在努力更新。
+  tagline: 欢迎来到 3 分钟实验室。
   image:
     src: /image/avatar.jpg
     alt: OpenLayers
@@ -31,11 +31,11 @@ hero:
 
 features:
   - icon: 😎
-    title: 目前更新
-    details: JavaScript , 三分钟学会系列
+    title: 目前状态
+    details: 分享一些我会的编程技术，让你可以快速上手。
   - icon: 👀
-    title: 计划更新
-    details: Vue全家桶 、Vue源码 、http 、node.js ...
+    title: 未来计划
+    details: 尝试更多领域，让学习变的更简单。
   - icon: 👨‍💻
     title: laf yyds
     details: 目前已经入职 laf ，为开源事业增砖添瓦！
