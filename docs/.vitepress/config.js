@@ -1,5 +1,5 @@
 export default {
-  title: '左风的博客',
+  title: '3分钟实验室',
   description: 'Just playing around.',
   head: [
     [

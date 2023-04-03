@@ -187,6 +187,19 @@ parentMessageId.value = res.id;
 
 **NO NO NO 我不允许你浪费年轻而美好的生命，life is short, you need laf 😃**
 
+## 不懂前端的同学看这里
+如果你不懂前端，还想搭建这个项目。  
+第一步：https://github.com/zuoFeng59556/chatGPT 打开这个网址。  
+第二步：在右上角的 star 小星星点亮 这一步特别重要）  
+第三步：切换分支为 feat-1
+
+![alt 属性文本](./image/9.png)   
+
+第四步：把这个项目弄到你本地，用啥方式都行。  
+第五步：用 vscode 或者任意编辑器打开这个项目。  
+第六步：找到 src/views/index.vue 把第 8 行的 < APPID > 换成你自己的 laf 上的 APPID。  
+然后 在命令行执行  `npm i`  之后再执行 `npm run dev` 就可以了。
+
 ## 上线
 
 打开你的 Laf，点击存储界面 --> 点击上方加号 --> 创建一个权限为 readonly 的存储桶（名字随意）。
